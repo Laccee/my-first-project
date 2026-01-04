@@ -19,9 +19,12 @@ export default function HeroCarousel() {
         {/* Slide 1 */}
         <SwiperSlide>
           <div className="relative w-full h-full">
-            <img
-              src="/icons/market-rouge.jpg"
-              alt="Fresh market produce"
+            <video
+              src="/media/HeroBanner1.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
@@ -52,7 +55,7 @@ export default function HeroCarousel() {
         <SwiperSlide>
           <div className="relative w-full h-full">
             <video
-              src="/media/HeroBanner.mp4"
+              src="/media/HeroBanner2.mp4"
               autoPlay
               muted
               loop

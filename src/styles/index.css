@@ -1,41 +1,36 @@
-/* Use standard Tailwind imports to avoid stylelint treating @tailwind as an unknown at-rule */
+/* Use standard Tailwind imports */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* Custom styles for Daddy's Oxtail Wellness Catering */
+/* Global body */
 body {
-  @apply bg-gray-50 text-gray-800 font-sans;
+  @apply bg-[#070707] text-[#F5F5DC] font-sans;
+  /* #3B2F2F = deep espresso brown, #F5F5DC = cream */
 }
 
-/* Hero Section */
-header {
-  @apply bg-green-600 text-white py-12 text-center;
-}
-
+/* Header refinement */
 header h1 {
-  @apply text-4xl font-bold;
+  @apply mt-24 text-6xl font-extrabold italic tracking-wider drop-shadow-xl bg-[#070707] text-pink-200;
 }
 
 header p {
-  @apply mt-4 text-lg;
+  @apply mt-4 text-lg uppercase tracking-widest text-pink-300;
 }
 
-/* Section Headings */
+/* Section headings */
 section h2 {
-  @apply text-2xl font-semibold text-green-700;
+  @apply text-3xl font-bold text-[#D2B48C];
+  /* #D2B48C = warm tan accent */
 }
 
 section p {
-  @apply mt-2 text-lg text-gray-600;
+  @apply mt-3 text-lg text-[#E0E0E0];
 }
 
-/* Footer Community Entrance */
-footer {
-  @apply bg-white border-t p-6 text-center;
-}
-
+/* Footer button */
 footer button {
-  @apply bg-green-600 text-white px-6 py-3 rounded-lg shadow 
-         hover:bg-green-700 transition;
+  @apply bg-gradient-to-r from-teal-700 to-green-700 text-white px-8 py-4 rounded-xl shadow-lg 
+         hover:from-green-800 hover:to-teal-800 transition-transform transform hover:scale-105;
 }
+
